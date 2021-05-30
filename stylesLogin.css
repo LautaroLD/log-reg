@@ -1,0 +1,223 @@
+@media only screen and (max-width: 650px) {
+  body .header {
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    height: max-content;
+    padding: 8px 8px 20px 8px;
+    margin-bottom: 0;
+  }
+  body .header a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 3.2rem;
+    font-style: oblique;
+    font-weight: bold;
+    color: white;
+    height: max-content;
+  }
+  body .header__img {
+    width: 50px;
+    height: 50px;
+    filter: invert(100%);
+  }
+  body .login__container {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    width: 100%;
+  }
+  body .footer {
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left: 30px;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  width: 100vw;
+  font-size: 62.5%;
+}
+
+body {
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
+  font-family: "Public Sans", sans-serif;
+  min-width: 320px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  height: auto;
+  padding-top: 8px;
+  padding-left: 8px;
+  margin-bottom: 15px;
+}
+
+.header a {
+  display: flex;
+  padding: 5px 25px;
+  align-items: center;
+  text-decoration: none;
+  font-size: 3.2rem;
+  font-style: oblique;
+  font-weight: bold;
+  color: #fff;
+  border-top: 1px solid white;
+  border-bottom: 4px solid white;
+  border-left: 1px solid white;
+  border-right: 4px solid white;
+  border-radius: 50px;
+}
+
+.header__img {
+  width: 60px;
+  height: 60px;
+  filter: invert(100%);
+}
+
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 30px;
+  min-height: calc(100vh - 200px);
+}
+
+.login__container {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 2px solid #fff;
+  border-radius: 40px;
+  color: #fff;
+  padding: 60px 68px 40px;
+  min-height: 700px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.login__container h2 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.login__container--form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login__container--details {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  font-size: 1.4rem;
+}
+
+.login__container--details > label {
+  display: flex;
+  align-items: center;
+}
+
+.login__container--details > label > input {
+  margin-right: 5px;
+}
+
+.login__container--details a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.login__container--details a:hover {
+  text-decoration: underline;
+}
+
+.login__container--socialMedia > div {
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.login__container--socialMedia > div > img {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.login__container--register {
+  font-size: 1.3rem;
+  display: flex;
+  align-items: baseline;
+  place-content: center;
+}
+
+.login__container--register a {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-decoration: none;
+  margin-left: 5px;
+  letter-spacing: 1px;
+  font-style: oblique;
+}
+
+.login__container--register a:hover {
+  text-decoration: underline;
+}
+
+.input {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px solid #fff;
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  padding: 0 20px;
+  outline: none;
+  height: 50px;
+  color: white;
+}
+
+::placeholder {
+  color: #fff;
+  font-size: 1.6rem;
+}
+
+button {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: bold;
+  height: 50px;
+  letter-spacing: 1px;
+  margin: 10px 0;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  justify-content: space-evenly;
+}
+
+.footer a {
+  color: #fff;
+  font-size: 1.4rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
